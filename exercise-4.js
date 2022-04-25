@@ -6,7 +6,7 @@ las dos primeras letras de cada palabra.
 */
 const generarCodigo = str =>{
     let code = ""
-    let newStr = str.toLowerCase().split(" ").map(x=>{
+    const newStr = str.toLowerCase().split(" ").map(x=>{
         for(let i = 0; i < 2;i++){
             code += x.charAt(i)
         }
